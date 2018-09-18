@@ -4,9 +4,13 @@ public class Task04 {
 
     public static float calculate(int a, int b, String operation) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        float res = 0;
+        float c = b;
+        if (operation == "+") res = a+c;
+        if (operation == "-") res = a-c;
+        if (operation == "*") res = a*c;
+        if (operation == "/") res = a/c;
+        return res;
     }
 
     public static void main(String[] args) {
