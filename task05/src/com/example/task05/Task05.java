@@ -3,10 +3,14 @@ package com.example.task05;
 public class Task05 {
 
     public static String solution(int x) {
-
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return "FALSE";
+        int flag = 0;
+        while (x>0)
+        {
+            if ((x%10)%2 != 0) flag++;
+            x /= 10;
+        }
+        if (flag == 0) return "TRUE";
+        else return "FALSE";
     }
 
     public static void main(String[] args) {
